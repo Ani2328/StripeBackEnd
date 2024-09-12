@@ -20,4 +20,4 @@ RUN bundle install
 EXPOSE 4567
 
 # Run the Ruby app, binding to 0.0.0.0 and using the PORT environment variable
-ENTRYPOINT ["ruby", "web.rb", "-o", "0.0.0.0", "-p", "$PORT"]
+ENTRYPOINT ["ruby", "web.rb", "-o", "0.0.0.0"]
