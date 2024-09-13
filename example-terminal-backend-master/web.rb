@@ -4,6 +4,9 @@ require 'dotenv'
 require 'json'
 require 'sinatra/cross_origin'
 
+set :bind, '0.0.0.0'
+set :port, ENV['PORT'] || 8080
+
 # Browsers require that external servers enable CORS when the server is at a different origin than the website.
 # https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
 # This enables the requires CORS headers to allow the browser to make the requests from the JS Example App.
