@@ -28,8 +28,8 @@ end
 Dotenv.load
 #Stripe.api_key = ENV['STRIPE_ENV'] == 'production' ? ENV['STRIPE_SECRET_KEY'] : ENV['STRIPE_TEST_SECRET_KEY']
 
-Stripe.api_key =  ENV['STRIPE_SECRET_KEY'] 
-
+Stripe.api_key =  'sk_test_51Pt1Zu06CaWAIG5tXyNAkgeM57E2UgJeOCtJo2hbXSJyGYm2mDP1EIl1Pf0mKpCrMrLFAqDwBda7WAPLjCKWG1Hj00efxGz2aM' 
+puts '===='+Stripe.api_key
 Stripe.api_version = '2020-03-02'
 
 def log_info(message)
